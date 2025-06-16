@@ -50,7 +50,6 @@ nav a:hover {
   text-align: center;
 }
 
-
 section {
   padding: 40px 20px;
 }
@@ -95,6 +94,7 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
 /* Formulario de contacto */
 .formulario-contacto {
   max-width: 600px;
@@ -124,4 +124,35 @@ footer {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
+}
+
+/* NUEVO: Imagen arriba de información del centro */
+.info-centro {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  color: #004080;
+}
+
+.info-centro img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+/* NUEVO: Control de contraste por fondo */
+.fondo-claro {
+  background-color: #ffffff;
+  color: #004080;
+}
+
+.fondo-oscuro {
+  background-color: #004080;
+  color: white;
+}
+
+/* Ajuste general para heredar color en cuerpo de texto */
+section p, section li, section span, section div {
+  color: inherit;
 }
