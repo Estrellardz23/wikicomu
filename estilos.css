@@ -155,20 +155,22 @@ footer {
   margin-bottom: 20px;
   border-radius: 12px;
 }
-/* ===========================
-   FIX TEXTO INVISIBLE BLANCO SOBRE BLANCO (sin cambiar botones ni links)
-   =========================== */
+/* SOLO texto blanco que no se ve sobre fondo blanco: lo hacemos negro */
 
-/* Forzar texto negro excepto en header, hero, botones y enlaces */
-body *:not(header *):not(.hero *):not(.boton):not(a) {
+/* Aplica solo a párrafos y textos dentro de secciones blancas (no hero ni header) */
+section:not(.hero) p,
+section:not(.hero) span,
+section:not(.hero) div,
+section:not(.hero) li {
   color: #000 !important;
 }
 
-/* Mantener color original en encabezados y enlaces dentro de header y hero */
-header h1, header h2, header h3,
+/* Mantener encabezados y textos en hero y header tal como están */
 .hero h1, .hero h2, .hero h3,
+header h1, header h2, header h3,
 header a, .hero a,
 .boton {
   color: inherit !important;
+}
 
 }
