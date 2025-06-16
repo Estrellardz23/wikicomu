@@ -4,8 +4,6 @@ body {
   padding: 0;
   background-color: #6699cc !important; /* azul cielo más oscuro pero suave */
   color: #333;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
