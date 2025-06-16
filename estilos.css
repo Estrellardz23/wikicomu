@@ -1,13 +1,13 @@
-/* Tipografía y fondo base */
+/* estilos.css */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
-  color: #000;
+  color: #333;
 }
 
-/* Header */
 header {
   background-color: #004080;
   color: white;
@@ -41,34 +41,24 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero principal */
 .hero {
   background-image: url("../imagenes2/comumay.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
   padding: 60px 20px;
   text-align: center;
 }
 
-.hero h1,
-.hero p {
-  color: white;
-}
-
-/* Encabezados blancos en todo */
-h1, h2, h3, h4, h5, h6 {
-  color: white;
-}
-
-/* Secciones normales */
 section {
   padding: 40px 20px;
-  background-color: white;
-  color: #000;
 }
 
-/* Tarjetas */
+h1, h2 {
+  color: #004080;
+}
+
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
@@ -82,10 +72,8 @@ section {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 300px;
-  color: #000;
 }
 
-/* Botones (sin cambios) */
 .boton {
   background-color: #004080;
   color: white;
@@ -100,7 +88,6 @@ section {
   background-color: #003366;
 }
 
-/* Footer */
 footer {
   background-color: #004080;
   color: white;
@@ -117,7 +104,6 @@ footer {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  color: #000;
 }
 
 .campo {
@@ -141,23 +127,27 @@ footer {
   box-sizing: border-box;
 }
 
-/* Imagen extra arriba del centro (opcional si decides usarla) */
-.info-centro {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #ffffff;
-  color: #000;
+/* ===========================
+   CORRECCIÓN TEXTOS INVISIBLES
+   =========================== */
+
+/* Títulos en secciones blancas: azul oscuro para visibilidad */
+section:not(.hero) h1,
+section:not(.hero) h2,
+section:not(.hero) h3,
+section:not(.hero) h4,
+section:not(.hero) h5,
+section:not(.hero) h6 {
+  color: #004080 !important;
 }
 
-.info-centro img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 12px;
+/* Mantener títulos en hero y header blancos */
+.hero h1, .hero h2, .hero h3,
+header h1, header h2, header h3 {
+  color: white !important;
 }
-/* SOLO texto blanco que no se ve sobre fondo blanco: lo hacemos negro */
 
-/* Aplica solo a párrafos y textos dentro de secciones blancas (no hero ni header) */
+/* Textos normales en secciones blancas en negro */
 section:not(.hero) p,
 section:not(.hero) span,
 section:not(.hero) div,
@@ -165,12 +155,8 @@ section:not(.hero) li {
   color: #000 !important;
 }
 
-/* Mantener encabezados y textos en hero y header tal como están */
-.hero h1, .hero h2, .hero h3,
-header h1, header h2, header h3,
-header a, .hero a,
-.boton {
+/* Mantener botones y enlaces sin cambios */
+.boton,
+a {
   color: inherit !important;
-}
-
 }
