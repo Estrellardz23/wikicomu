@@ -6,6 +6,7 @@ body {
   padding: 0;
   background-color: #f2f2f2;
   color: #333;
+  text-align: center; /* CENTRADO GENERAL del texto */
 }
 
 header {
@@ -16,6 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  text-align: left; /* Para que el header no quede centrado */
 }
 
 .logo {
@@ -53,8 +55,7 @@ nav a:hover {
 
 section {
   padding: 40px 20px;
-  /* Por defecto el texto aquí será negro, para evitar blancos invisibles */
-  color: #000;
+  color: red; /* TEXTO ROJO en todo lo que está dentro de secciones */
 }
 
 h1, h2 {
@@ -74,12 +75,12 @@ h1, h2 {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 300px;
-  color: #000; /* texto negro para evitar blancos invisibles */
+  color: red; /* TEXTO ROJO dentro de tarjetas */
 }
 
 .boton {
   background-color: #004080;
-  color: white; /* Los botones mantienen texto blanco */
+  color: white; /* Botones SIN tocar */
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -107,7 +108,7 @@ footer {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  color: #000; /* Texto negro en formulario para evitar invisibles */
+  color: red; /* TEXTO ROJO en formulario */
 }
 
 .campo {
@@ -119,7 +120,7 @@ footer {
   font-weight: bold;
   margin-bottom: 6px;
   font-size: 16px;
-  color: #000; /* Etiquetas en negro */
+  color: red; /* etiquetas rojas */
 }
 
 .campo input,
@@ -130,19 +131,18 @@ footer {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #000; /* Texto dentro de inputs en negro */
+  color: black; /* texto dentro inputs negro */
   background-color: white;
 }
 
-/* Excepciones para que header y hero mantengan texto blanco */
-
+/* Mantener header, hero y enlaces sin cambio */
 header,
 .hero,
 header a {
   color: white !important;
 }
 
-/* Botones no se modifican */
+/* Botones mantienen texto blanco */
 .boton {
   color: white !important;
 }
