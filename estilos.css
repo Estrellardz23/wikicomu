@@ -171,3 +171,19 @@ header a, .hero a {
   color: white !important;
 }
 
+/* ===========================
+   🔧 FIX GLOBAL: evitar texto blanco en secciones claras
+   =========================== */
+
+/* 1) Convertir todo texto accidentalmente blanco en negro */
+*:not(header *):not(.hero *) {
+  color: #000 !important;
+}
+
+/* 2) Excepcion: dejar encabezados del header y hero en blanco/diseño */
+header h1, header h2, header h3,
+.hero h1, .hero h2, .hero h3,
+header a, .hero a,
+.boton {
+  color: inherit !important;
+}
