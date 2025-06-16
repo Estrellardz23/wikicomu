@@ -155,35 +155,20 @@ footer {
   margin-bottom: 20px;
   border-radius: 12px;
 }
-
-/* ======= FIX CRUCIAL: Forzar color negro en secciones ======= */
-section * {
-  color: #000 !important;
-}
-
-/* Exceptuar encabezados en hero para que se vean blancos */
-.hero h1, .hero h2, .hero h3 {
-  color: white !important;
-}
-
-/* Evitar alterar enlaces del header o hero */
-header a, .hero a {
-  color: white !important;
-}
-
 /* ===========================
-   🔧 FIX GLOBAL: evitar texto blanco en secciones claras
+   FIX TEXTO INVISIBLE BLANCO SOBRE BLANCO (sin cambiar botones ni links)
    =========================== */
 
-/* 1) Convertir todo texto accidentalmente blanco en negro */
-*:not(header *):not(.hero *) {
+/* Forzar texto negro excepto en header, hero, botones y enlaces */
+body *:not(header *):not(.hero *):not(.boton):not(a) {
   color: #000 !important;
 }
 
-/* 2) Excepcion: dejar encabezados del header y hero en blanco/diseño */
+/* Mantener color original en encabezados y enlaces dentro de header y hero */
 header h1, header h2, header h3,
 .hero h1, .hero h2, .hero h3,
 header a, .hero a,
 .boton {
   color: inherit !important;
+
 }
