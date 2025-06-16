@@ -1,11 +1,9 @@
-/* estilos.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color:#99c2ff /* azul clarito / cielo */
-  color: #333; /* texto negro para cuerpo */
-  text-align: center;
+  background-color: #6699cc !important; /* azul cielo más oscuro pero suave */
+  color: #333;
 }
 
 header {
@@ -16,7 +14,6 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  text-align: left;
 }
 
 .logo {
@@ -47,18 +44,17 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white; /* texto blanco sobre imagen */
+  color: white;
   padding: 60px 20px;
   text-align: center;
 }
 
 section {
   padding: 40px 20px;
-  color: #333; /* texto negro */
 }
 
 h1, h2 {
-  color: #004080; /* títulos azul oscuro */
+  color: #004080;
 }
 
 .tarjetas {
@@ -74,12 +70,11 @@ h1, h2 {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 300px;
-  color: #333;
 }
 
 .boton {
   background-color: #004080;
-  color: white; /* botones en blanco */
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -107,7 +102,6 @@ footer {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  color: #333;
 }
 
 .campo {
@@ -119,7 +113,6 @@ footer {
   font-weight: bold;
   margin-bottom: 6px;
   font-size: 16px;
-  color: #333;
 }
 
 .campo input,
@@ -130,6 +123,4 @@ footer {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
-  color: black;
-  background-color: white;
 }
