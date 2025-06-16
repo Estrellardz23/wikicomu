@@ -1,12 +1,13 @@
-/* estilos.css */
+/* Tipografía y fondo base */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
-  color: #333;
+  color: #000; /* Texto general negro */
 }
 
+/* Header */
 header {
   background-color: #004080;
   color: white;
@@ -40,24 +41,34 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Hero */
 .hero {
   background-image: url("../imagenes2/comumay.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
   padding: 60px 20px;
   text-align: center;
 }
 
+.hero h1,
+.hero p {
+  color: white;
+}
+
+/* Encabezados blancos */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+/* Secciones normales con fondo claro */
 section {
   padding: 40px 20px;
+  background-color: white;
+  color: #000;
 }
 
-h1, h2 {
-  color: #004080;
-}
-
+/* Tarjetas */
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
@@ -71,8 +82,10 @@ h1, h2 {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 300px;
+  color: #000;
 }
 
+/* Botones (como estaban antes) */
 .boton {
   background-color: #004080;
   color: white;
@@ -87,6 +100,7 @@ h1, h2 {
   background-color: #003366;
 }
 
+/* Footer */
 footer {
   background-color: #004080;
   color: white;
@@ -103,6 +117,7 @@ footer {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #000;
 }
 
 .campo {
@@ -126,12 +141,12 @@ footer {
   box-sizing: border-box;
 }
 
-/* NUEVO: Imagen arriba de información del centro */
+/* NUEVA sección info del centro */
 .info-centro {
   text-align: center;
   padding: 40px 20px;
   background-color: #ffffff;
-  color: #004080;
+  color: #000;
 }
 
 .info-centro img {
@@ -139,20 +154,4 @@ footer {
   height: auto;
   margin-bottom: 20px;
   border-radius: 12px;
-}
-
-/* NUEVO: Control de contraste por fondo */
-.fondo-claro {
-  background-color: #ffffff;
-  color: #004080;
-}
-
-.fondo-oscuro {
-  background-color: #004080;
-  color: white;
-}
-
-/* Ajuste general para heredar color en cuerpo de texto */
-section p, section li, section span, section div {
-  color: inherit;
 }
