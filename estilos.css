@@ -53,6 +53,8 @@ nav a:hover {
 
 section {
   padding: 40px 20px;
+  /* Por defecto el texto aquí será negro, para evitar blancos invisibles */
+  color: #000;
 }
 
 h1, h2 {
@@ -72,11 +74,12 @@ h1, h2 {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 300px;
+  color: #000; /* texto negro para evitar blancos invisibles */
 }
 
 .boton {
   background-color: #004080;
-  color: white;
+  color: white; /* Los botones mantienen texto blanco */
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -104,6 +107,7 @@ footer {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #000; /* Texto negro en formulario para evitar invisibles */
 }
 
 .campo {
@@ -115,6 +119,7 @@ footer {
   font-weight: bold;
   margin-bottom: 6px;
   font-size: 16px;
+  color: #000; /* Etiquetas en negro */
 }
 
 .campo input,
@@ -125,38 +130,19 @@ footer {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
+  color: #000; /* Texto dentro de inputs en negro */
+  background-color: white;
 }
 
-/* ===========================
-   CORRECCIÓN TEXTOS INVISIBLES
-   =========================== */
+/* Excepciones para que header y hero mantengan texto blanco */
 
-/* Títulos en secciones blancas: azul oscuro para visibilidad */
-section:not(.hero) h1,
-section:not(.hero) h2,
-section:not(.hero) h3,
-section:not(.hero) h4,
-section:not(.hero) h5,
-section:not(.hero) h6 {
-  color: #004080 !important;
-}
-
-/* Mantener títulos en hero y header blancos */
-.hero h1, .hero h2, .hero h3,
-header h1, header h2, header h3 {
+header,
+.hero,
+header a {
   color: white !important;
 }
 
-/* Textos normales en secciones blancas en negro */
-section:not(.hero) p,
-section:not(.hero) span,
-section:not(.hero) div,
-section:not(.hero) li {
-  color: #000 !important;
-}
-
-/* Mantener botones y enlaces sin cambios */
-.boton,
-a {
-  color: inherit !important;
+/* Botones no se modifican */
+.boton {
+  color: white !important;
 }
