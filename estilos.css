@@ -1,12 +1,11 @@
 /* estilos.css */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
   color: #333;
-  text-align: center; /* CENTRADO GENERAL del texto */
+  text-align: center;
 }
 
 header {
@@ -17,7 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  text-align: left; /* Para que el header no quede centrado */
+  text-align: left;
 }
 
 .logo {
@@ -55,7 +54,7 @@ nav a:hover {
 
 section {
   padding: 40px 20px;
-  color: red; /* TEXTO ROJO en todo lo que está dentro de secciones */
+  color: red !important;  /* Fuerza texto rojo aquí */
 }
 
 h1, h2 {
@@ -75,12 +74,12 @@ h1, h2 {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 300px;
-  color: red; /* TEXTO ROJO dentro de tarjetas */
+  color: red !important; /* Fuerza texto rojo */
 }
 
 .boton {
   background-color: #004080;
-  color: white; /* Botones SIN tocar */
+  color: white !important; /* NO cambiar botones */
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -108,7 +107,7 @@ footer {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  color: red; /* TEXTO ROJO en formulario */
+  color: red !important; /* fuerza texto rojo */
 }
 
 .campo {
@@ -120,7 +119,7 @@ footer {
   font-weight: bold;
   margin-bottom: 6px;
   font-size: 16px;
-  color: red; /* etiquetas rojas */
+  color: red !important; /* fuerza rojo */
 }
 
 .campo input,
@@ -131,18 +130,13 @@ footer {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
-  color: black; /* texto dentro inputs negro */
+  color: black; /* input texto negro */
   background-color: white;
 }
 
-/* Mantener header, hero y enlaces sin cambio */
+/* Header, hero y enlaces mantienen blanco */
 header,
 .hero,
 header a {
-  color: white !important;
-}
-
-/* Botones mantienen texto blanco */
-.boton {
   color: white !important;
 }
